@@ -1,0 +1,640 @@
+Rebound & Relay – Mvp Architecture & Build Plan
+REBOUND & RELAY
+Transforming Higher Education Consulting
+Dual‑Portal Platform Proposal + Updated Architecture (IndieKit / Next.js / Stripe)
+
+Prepared for: Tim & Adaptive Group
+Prepared by: Rupesh Koirala
+Date: February 2026
+
+0) What this document is
+
+This is a single, end‑to‑end proposal + implementation plan that you can share with non‑technical stakeholders and hand to engineering to build without ambiguity.
+
+It replaces the earlier microservices-heavy proposal with an IndieKit-native architecture that aligns with the B2B template you purchased (Next.js full‑stack + Drizzle + NextAuth + Inngest + Stripe + S3). The goal is to deliver a credible MVP fast, avoid unnecessary infrastructure overhead, and keep a clean scaling path.
+
+At the end, you’ll also find a copy‑paste Antigravity “System Prompt + Operator Prompt” designed to generate the required files inside your existing IndieKit repository.
+
+1) Executive Summary
+
+Rebound and Relay will be delivered as a unified dual‑portal SaaS platform:
+
+Rebound (Consultant Portal): consultants sign up, build profiles, upload documents, submit for approval, manage engagements, and track invoices/payout status.
+
+Relay (Client/Institution Portal): institutions search and filter consultants, initiate engagements, manage billing, and pay invoices.
+
+Key shift from the previous architecture
+
+Instead of building a distributed microservices system from day one, we will build on the proven IndieKit B2B template:
+
+One cohesive Next.js full‑stack application with clear internal modules.
+
+One shared database (Postgres via Drizzle) powering both portals.
+
+Stripe for payments (Checkout + webhooks) and commission logic.
+
+AWS S3 for secure document storage (presigned uploads + signed downloads).
+
+Inngest for background workflows (email notifications, post-payment actions, indexing).
+
+This approach:
+
+reduces time‑to‑launch,
+
+reduces operational risk and cloud costs,
+
+remains enterprise‑ready (security, audit trails, compliance posture),
+
+preserves an upgrade path to extract modules later if scale demands it.
+
+2) Strategic Value Proposition
+Why Adaptive Group wins with this approach
+
+Speed to market: launch a functional marketplace sooner and validate demand without long infrastructure build-out.
+
+Unified governance: Adaptive Group retains control of financial policy, audit trails, and compliance standards.
+
+Lower operational complexity: fewer moving parts means fewer failure points and lower maintenance.
+
+Scalable foundation: the architecture is designed to scale from early MVP → growth without rewriting core data models.
+
+Expected platform outcomes
+
+Increase consultant signups and onboarding conversion.
+
+Reduce friction for institutions to find and engage the right experts.
+
+Enable structured engagements, transparent billing, and auditable payments.
+
+3) Product Overview
+3.1 Portals
+Rebound (Consultant Portal)
+
+Primary actions
+
+Create account and complete onboarding
+
+Build and maintain profile
+
+Upload documents (resume, proposals, credentials)
+
+Submit profile for moderation
+
+Manage engagement lifecycle (view-only MVP or limited actions)
+
+Track invoices and payment status
+
+Relay (Client/Institution Portal)
+
+Primary actions
+
+Search/filter consultants
+
+View consultant profiles (only ACTIVE/approved)
+
+Initiate an engagement
+
+Create invoice and pay via Stripe Checkout
+
+Download invoices/receipts
+
+Admin / Moderation (Adaptive Group)
+
+Primary actions
+
+Review submitted consultant profiles
+
+Approve / reject with reason
+
+View engagement and billing activity
+
+Audit log access and basic reporting
+
+4) Why we choose IndieKit / Next.js full‑stack over microservices (for MVP)
+
+Microservices are powerful, but at MVP stage they create significant overhead:
+
+multiple services to deploy and monitor
+
+distributed debugging and tracing complexity
+
+cross-service auth, retries, and reliability concerns
+
+higher cost (managed Redis, Kafka/MSK, OpenSearch, multi‑service compute)
+
+IndieKit-based full‑stack approach is the pragmatic middle ground:
+
+One deployment surface
+
+Fewer failure points
+
+Faster iteration
+
+Built-in B2B SaaS scaffolding (auth, billing patterns, emails, background jobs)
+
+Modular design so we can later split off (billing/search) if scale requires
+
+Bottom line: We optimize for launch + validation + controlled evolution.
+
+5) Updated Architecture (IndieKit‑Native)
+
+This section replaces the previous Spring + Gateway + Microservices diagram.
+
+5.1 System Components (High Level)
+
+Next.js Full‑Stack App (IndieKit)
+
+Hosts the UI for Rebound/Relay/Admin
+
+Hosts backend routes (API route handlers, server actions)
+
+Enforces authentication and authorization
+
+Database (PostgreSQL via Drizzle ORM)
+
+Single source of truth for users, consultants, engagements, invoices, audit logs
+
+Payments (Stripe)
+
+Stripe Checkout for payment capture
+
+Stripe Webhooks for payment confirmation
+
+Commission logic tracked by platform and written into invoice records
+
+Storage (AWS S3)
+
+Presigned upload URLs (client uploads directly to S3)
+
+Signed download URLs (time‑limited)
+
+Metadata stored in DB
+
+Background Workflows (Inngest)
+
+Email notifications (submitted/approved/rejected)
+
+Post‑payment email receipts
+
+Async indexing/housekeeping tasks
+
+Emails (React Email + SES or provider used in kit)
+
+Templated transactional emails
+
+5.2 Logical Data Flow (End‑to‑End)
+Consultant Onboarding
+
+Consultant signs up → user created
+
+Consultant creates profile (status = DRAFT)
+
+Consultant uploads resume/docs → stored in S3, metadata saved
+
+Consultant submits profile → status = SUBMITTED
+
+Admin reviews → approve (ACTIVE) or reject (REJECTED)
+
+Inngest triggers notification emails and indexing updates
+
+Client Engagement & Payment
+
+Client searches consultants (only ACTIVE shown)
+
+Client initiates engagement (status = INITIATED)
+
+Invoice created (status = PENDING)
+
+Client pays via Stripe Checkout
+
+Stripe webhook received and verified
+
+Invoice marked PAID, audit log written
+
+Inngest sends receipt notifications and triggers next-step workflows
+
+6) Stripe (Chosen Provider) — How payments work
+
+We will use Stripe exclusively (no Dodo) to keep financial flows consistent and enterprise‑trusted.
+
+6.1 Payment model (MVP)
+
+Invoice is the core financial object in our system.
+
+Stripe Checkout is used for payment capture.
+
+Stripe webhooks confirm the payment asynchronously.
+
+6.2 Reliability and safety guarantees
+
+Webhook signature verification is mandatory.
+
+Webhook handlers are idempotent:
+
+Store Stripe event IDs or checkout session IDs to ensure we never double‑mark an invoice paid.
+
+Financial audit records are written for every change:
+
+invoice created
+
+checkout initiated
+
+payment succeeded/failed
+
+refund (if later enabled)
+
+6.3 Commission logic (Adaptive Group governance)
+
+On payment success, platform fee is calculated (e.g., 10–20% configurable)
+
+Earnings are computed and stored
+
+Payout automation can be Phase 2:
+
+MVP can track earnings without executing payouts
+
+Phase 2 can implement Stripe Connect for payouts and tax forms
+
+7) Documents & Storage (S3)
+Why S3
+
+Secure, durable, cost‑effective
+
+Works with encrypted storage + lifecycle policies
+
+How uploads work (secure pattern)
+
+App generates a presigned upload URL
+
+User uploads directly to S3
+
+App stores only metadata in the database
+
+How downloads work
+
+App checks authorization (ownership / org membership)
+
+App generates signed download URL with expiry
+
+Files we store
+
+Resume
+
+Proposals
+
+Invoices / receipts
+
+Deliverables (optional in MVP)
+
+8) Security, Privacy, and Compliance Posture
+
+This architecture is designed to be compliant-ready without overbuilding.
+
+8.1 Authentication
+
+NextAuth v5 (Auth.js) with secure session handling
+
+Strong password hashing / secure flows (as provided by kit)
+
+8.2 Authorization
+
+RBAC roles:
+
+CONSULTANT
+
+CLIENT
+
+ADMIN
+
+Ownership checks:
+
+consultants can only access their own profile/documents
+
+clients can only access engagements/invoices belonging to their org
+
+admins can access moderation & governance views
+
+8.3 Audit trails
+
+All financial and sensitive admin actions are recorded:
+
+profile approvals/rejections
+
+invoice creation
+
+payment confirmation
+
+access to sensitive docs
+
+8.4 Data privacy scope (confirm with client)
+
+GDPR/CCPA readiness: data export, deletion workflows (phase-based)
+
+Any FERPA-related constraints (higher education often requires careful handling)
+
+9) Search & Discovery (MVP)
+
+The MVP will use the database for search and filtering.
+
+Why not Elasticsearch/OpenSearch initially
+
+Adds cost and operational overhead
+
+Not required for the first 1k–2k users if DB queries are indexed properly
+
+MVP search features
+
+Keyword search on headline/bio
+
+Filters:
+
+expertise tags
+
+location
+
+availability
+
+verification status
+
+Scale path
+
+If search becomes the bottleneck:
+
+introduce a dedicated search index later without changing primary data model
+
+10) Hosting Strategy: AWS vs Supabase (Decision Framework)
+
+You asked for a clear “why choose what” explanation for non‑technical stakeholders.
+
+Option A — AWS (Recommended for flexibility + S3/SES integration)
+
+Best when:
+
+you want maximum control
+
+you expect enterprise compliance needs
+
+you want first-class S3 + SES integration
+
+Typical setup:
+
+Next.js hosted on Vercel or AWS (depends on ops preference)
+
+Postgres via Neon or AWS RDS (depending on operational preference)
+
+S3 for documents
+
+SES for email
+
+Option B — Supabase (Fastest if you want managed auth/storage/db)
+
+Best when:
+
+you want rapid MVP
+
+you want a managed stack with minimal ops
+
+Caveat:
+
+Your current repo already includes AWS SDK patterns (S3/SES), so AWS aligns more naturally.
+
+Recommendation
+
+Given your repo dependencies and the need for secure document workflows, AWS (S3 + SES) + Postgres (Neon or RDS) + Next.js deploy is the most coherent path.
+
+11) Implementation Plan (Phased Delivery)
+Phase 1 — Foundation (1–2 weeks)
+
+Confirm requirements + open questions
+
+Set up environments (dev/staging/prod)
+
+Finalize data models and permission boundaries
+
+Stripe test mode configuration + webhook endpoints
+
+Phase 2 — Consultant Core (2–3 weeks)
+
+Rebound portal pages
+
+Consultant profile CRUD
+
+Document upload to S3
+
+Submit for review
+
+Admin moderation actions
+
+Phase 3 — Client Core + Billing (2–4 weeks)
+
+Relay search and profiles
+
+Engagement creation
+
+Invoice creation
+
+Stripe Checkout + webhook payment confirmation
+
+Receipts/notifications via Inngest + React Email
+
+Phase 4 — Beta hardening (2–4 weeks)
+
+UX improvements
+
+Basic reporting views
+
+Abuse protection / rate limiting (if needed)
+
+Security review checklist
+
+12) Cost Structure (Simple and defensible)
+Infrastructure (launch-stage)
+
+Expected range: ~$75–$150/month (varies with hosting choices)
+
+Postgres (Neon/Supabase/AWS RDS)
+
+Object storage (S3)
+
+Email (SES or provider)
+
+Observability (Sentry already present)
+
+Stripe fees
+
+Standard Stripe processing fees apply (per transaction)
+
+Development investment
+
+Final cost depends on scope, polish, and compliance depth. A practical MVP build typically falls into:
+
+~6–10 weeks depending on feedback cycles and final scope
+
+13) Open Questions to Confirm (Client Inputs)
+
+Stripe model:
+
+Do we need Stripe Connect (payouts) in MVP or Phase 2?
+
+Commission structure:
+
+fixed %? tiered? negotiated per client?
+
+Moderation strictness:
+
+manual review for every consultant, or selective?
+
+Compliance scope:
+
+GDPR/CCPA day-one? any FERPA constraints?
+
+Engagement workflow depth:
+
+simple “scope + invoice” MVP, or contracts/signatures in MVP?
+
+14) Risks & Trade-offs (Transparent)
+
+Template constraints: We gain speed by using IndieKit conventions; we avoid unnecessary customization early.
+
+Search limitations: DB-based search is sufficient early; we can add dedicated search later.
+
+Payout complexity: Stripe Connect introduces tax/payout complexity; best as Phase 2 unless required.
+
+15) Why this approach is high-confidence
+
+We are building on an existing production-ready SaaS template, not reinventing core primitives.
+
+We preserve enterprise requirements (audit, RBAC, secure doc storage) without microservice overhead.
+
+We align architecture with the exact repo setup already in place.
+
+16) Antigravity One‑Shot Build Prompts (Codex / Gemini 3.1)
+
+Below is a copy‑paste system prompt tailored to the IndieKit repository structure you shared.
+
+16.1 System Prompt (paste into Antigravity SYSTEM)
+You are a senior full-stack engineer working inside an existing Indie Kit (Next.js 16) B2B SaaS codebase.
+  2) create Stripe Checkout session
+  3) redirect client to Stripe
+  4) webhook verifies signature and marks invoice PAID
+- Webhook handler must:
+  - verify stripe signature
+  - be idempotent using stripe_event_id table
+  - update invoices safely
+  - write audit log row
+
+
+DOCUMENT STORAGE
+- Use S3 presigned upload (preferred) or existing kit storage utilities.
+- Uploads should go directly from browser to S3.
+- Downloads via signed URLs.
+- Strict ownership checks.
+
+
+INNGEST
+Use Inngest to:
+- notify admin on profile submission
+- notify consultant on approve/reject
+- send client receipt when invoice paid
+
+
+ROUTES / UI (ADAPT TO EXISTING STRUCTURE)
+Create route groups:
+- src/app/(rebound)/...
+- src/app/(relay)/...
+- src/app/(admin)/...
+
+
+Pages (minimum)
+Rebound:
+- /rebound/profile
+- /rebound/documents
+- /rebound/engagements
+Relay:
+- /relay/consultants
+- /relay/consultants/[id]
+- /relay/engagements/new
+- /relay/invoices/[id]
+Admin:
+- /admin/consultants
+- /admin/consultants/[id]
+
+
+API / route handlers (minimum)
+- consultant profile CRUD + submit
+- admin approve/reject
+- search consultants
+- engagement create
+- invoice create
+- stripe checkout session create
+- stripe webhook receiver
+- s3 presign upload + signed download
+
+
+ENV VARS (ADD PLACEHOLDERS ONLY)
+- DATABASE_URL
+- NEXTAUTH_URL / AUTH_* used by repo
+- STRIPE_SECRET_KEY
+- STRIPE_WEBHOOK_SECRET
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_REGION
+- S3_BUCKET
+- SES_FROM_EMAIL (if used)
+- INNGEST_EVENT_KEY (if required by repo)
+
+
+DELIVERABLE OUTPUT
+At completion:
+1) List files changed/created with reasoning
+2) Local run steps (pnpm install/dev, drizzle migrate, inngest dev)
+3) Smoke test checklist
+
+
+Proceed now:
+- Phase 0 discovery summary
+- Then implement MVP in small coherent steps
+- Never break existing kit features
+16.2 Operator Prompt (paste as FIRST USER message)
+Start Phase 0 discovery.
+Print the repo map focusing on:
+- src/app routing
+- src/db schema + db client
+- next-auth config location
+- existing Stripe routes/helpers
+- S3 helpers and email helpers
+- any org/team tenancy model
+Then propose the exact File Plan before generating code.
+17) Optional: Client‑Facing Short Email (copy/paste)
+
+Hi Tim — sharing the updated proposal aligned with the IndieKit B2B foundation we’ve adopted. This architecture reduces time-to-market and operational overhead while keeping enterprise-grade security, auditability, Stripe payments, and a clear scaling path. Happy to walk through it in a short Loom if helpful.
+
+18) Final Notes
+
+This architecture is intentionally designed to be:
+
+simple enough to ship quickly
+
+strong enough to be trusted
+
+structured enough to scale
+
+If we confirm the open questions (Stripe Connect timing, moderation strictness, compliance scope), we can lock implementation and begin immediately.
+
+Done — I one-shot replaced the entire canvas with a very long, complete proposal + updated IndieKit/Next.js/Stripe architecture, and I also included:
+
+the high-level non-technical explanation (why this approach, why not microservices)
+
+AWS vs Supabase decision framework (in plain English)
+
+full MVP flows (consultant → moderation, client → engagement → invoice → Stripe payment)
+
+security/compliance posture (RBAC, audit logs, doc security)
+
+phased roadmap + costs + risks + open questions
+
+Stripe-only financial model and idempotent webhook requirements
+
+a ready-to-copy Antigravity System Prompt + Operator Prompt tailored to your repo (pnpm, drizzle, next-auth v5, inngest, stripe, s3/ses)
+
+You can now copy the prompt section directly into Antigravity and run it as your “automagic” file generator.

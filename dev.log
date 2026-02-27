@@ -1,0 +1,2952 @@
+
+> rebound-relay@0.1.0 dev D:\Projects\Coding\TAG\b2b-boilerplate
+> concurrently "next dev --turbopack" "inngest-cli dev -p 8288" "npx react-email dev --dir ./src/emails --port 3001"
+
+[1] '"D:\Projects\Coding\TAG\b2b-boilerplate\node_modules\.bin\\..\.pnpm\inngest-cli@0.26.7\node_modules\inngest-cli\bin\inngest"' is not recognized as an internal or external command,
+[1] operable program or batch file.
+[1] inngest-cli dev -p 8288 exited with code 1
+[2] npm warn Unknown env config "npm-globalconfig". This will stop working in the next major version of npm.
+[2] npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm.
+[2] npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm.
+[0] Sentry DSN is not set. Skipping Sentry configuration.
+[0] ▲ Next.js 16.1.6 (Turbopack)
+[0] - Local:         http://localhost:3000
+[0] - Network:       http://100.111.164.1:3000
+[0] - Environments: .env
+[0] 
+[0] ✓ Starting...
+[0] [MDX] updated map file in 37.38600000000042ms
+[0] [MDX] started dev server
+[0] ✓ Ready in 14.6s
+[2]     React Email 5.2.8
+[2]     Running preview at:          http://localhost:3001
+[2] 
+[2] - Getting react-email preview server ready...
+[2] 
+[2]   [32m✔[39m Ready in 0.9s
+[2] 
+[0] ○ Compiling /sign-in ...
+[0] ⨯ ./src/lib/supabase/client.ts:3:1
+[0] Ecmascript file had an error
+[0] [0m [90m 1 |[39m [36mimport[39m { createBrowserClient } [36mfrom[39m [32m'@supabase/ssr'[39m
+[0]  [90m 2 |[39m [36mimport[39m { createServerClient } [36mfrom[39m [32m'@supabase/ssr'[39m
+[0] [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m
+[0]  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 4 |[39m
+[0]  [90m 5 |[39m [90m/**[39m
+[0]  [90m 6 |[39m [90m * Creates a Supabase client for use in client components[39m[0m
+[0] 
+[0] You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+[0] 
+[0] 
+[0] 
+[0] Import traces:
+[0]   Client Component Browser:
+[0]     ./src/lib/supabase/client.ts [Client Component Browser]
+[0]     ./src/components/auth/auth-form.tsx [Client Component Browser]
+[0]     ./src/components/auth/auth-form.tsx [Server Component]
+[0]     ./src/app/(auth)/sign-in/page.tsx [Server Component]
+[0] 
+[0]   Client Component SSR:
+[0]     ./src/lib/supabase/client.ts [Client Component SSR]
+[0]     ./src/components/auth/auth-form.tsx [Client Component SSR]
+[0]     ./src/components/auth/auth-form.tsx [Server Component]
+[0]     ./src/app/(auth)/sign-in/page.tsx [Server Component]
+[0] 
+[0] 
+[0] ○ Compiling /_error ...
+[0]  GET /sign-in 500 in 10.4s (compile: 8.2s, proxy.ts: 1778ms, render: 370ms)
+[0] ⨯ ./src/lib/supabase/client.ts:3:1
+[0] Ecmascript file had an error
+[0] [0m [90m 1 |[39m [36mimport[39m { createBrowserClient } [36mfrom[39m [32m'@supabase/ssr'[39m
+[0]  [90m 2 |[39m [36mimport[39m { createServerClient } [36mfrom[39m [32m'@supabase/ssr'[39m
+[0] [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m
+[0]  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 4 |[39m
+[0]  [90m 5 |[39m [90m/**[39m
+[0]  [90m 6 |[39m [90m * Creates a Supabase client for use in client components[39m[0m
+[0] 
+[0] You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+[0] 
+[0] 
+[0] 
+[0] Import traces:
+[0]   Client Component Browser:
+[0]     ./src/lib/supabase/client.ts [Client Component Browser]
+[0]     ./src/components/auth/auth-form.tsx [Client Component Browser]
+[0]     ./src/components/auth/auth-form.tsx [Server Component]
+[0]     ./src/app/(auth)/sign-in/page.tsx [Server Component]
+[0] 
+[0]   Client Component SSR:
+[0]     ./src/lib/supabase/client.ts [Client Component SSR]
+[0]     ./src/components/auth/auth-form.tsx [Client Component SSR]
+[0]     ./src/components/auth/auth-form.tsx [Server Component]
+[0]     ./src/app/(auth)/sign-in/page.tsx [Server Component]
+[0] 
+[0] 
+[0]  GET /sign-in 500 in 68ms (compile: 21ms, proxy.ts: 23ms, render: 23ms)
+[0] ✓ Compiled in 522ms
+[0]  GET /sign-in 200 in 1909ms (compile: 319ms, proxy.ts: 18ms, render: 1571ms)
+[0]  GET /api/auth/session 200 in 3.3s (compile: 3.2s, render: 44ms)
+[0]  GET /api/auth/session 200 in 30ms (compile: 17ms, render: 13ms)
+[0]  GET /sign-in 200 in 208ms (compile: 24ms, proxy.ts: 27ms, render: 157ms)
+[0]  GET /api/auth/session 200 in 48ms (compile: 30ms, render: 19ms)
+[0]  GET /api/auth/session 200 in 19ms (compile: 6ms, render: 14ms)
+[0] ○ Compiling /rebound/profile ...
+[0] ⨯ ./src/components/forms/consultant-profile-form.tsx:271:62
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 269 |[39m             render[33m=[39m{({ field }) [33m=>[39m (
+[0]  [90m 270 |[39m               [33m<[39m[33mFormItem[39m[33m>[39m
+[0] [31m[1m>[22m[39m[90m 271 |[39m                 [33m<[39m[33mFormLabel[39m[33m>[39m[33mProfessional[39m [33mBio[39m[33m<[39m[33m/[39m[33mFormDescription[39m[33m>[39m
+[0]  [90m     |[39m                                                              [31m[1m^[22m[39m
+[0] [31m[1m>[22m[39m[90m 272 |[39m                 [33m<[39m[33mFormDescription[39m[33m>[39m
+[0]  [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 273 |[39m                   [33mTell[39m institutions about your background[33m,[39m experience[33m,[39m and the value you
+[0]  [90m 274 |[39m                   bring[33m.[39m [33mThis[39m will be visible on your [36mpublic[39m profile[33m.[39m
+[0]  [90m 275 |[39m                 [33m<[39m[33m/[39m[33mFormDescription[39m[33m>[39m[0m
+[0] 
+[0] Expected '</', got 'jsx text'
+[0] 
+[0] Import trace:
+[0]   Server Component:
+[0]     ./src/components/forms/consultant-profile-form.tsx
+[0]     ./src/app/rebound/profile/page.tsx
+[0] 
+[0] 
+[0]  GET /rebound/profile 500 in 3.9s (compile: 3.8s, render: 43ms)
+[0] ✓ Compiled in 859ms
+[0] ⨯ Error: Unauthorized
+[0]     at getConsultantProfile (src\lib\rebound\actions.ts:12:31)
+[0]     at async ReboundProfilePage (src\app\rebound\profile\page.tsx:32:19)
+[0]   10 | export async function getConsultantProfile() {
+[0]   11 |     const session = await auth();
+[0] > 12 |     if (!session?.user) throw new Error("Unauthorized");
+[0]      |                               ^
+[0]   13 |
+[0]   14 |     const profile = await db
+[0]   15 |         .select() {
+[0]   digest: '3657180046'
+[0] }
+[0]  GET /rebound/profile 200 in 2.3s (compile: 890ms, render: 1423ms)
+[0]  GET /api/auth/session 200 in 42ms (compile: 25ms, render: 18ms)
+[0]  GET /api/auth/session 200 in 111ms (compile: 7ms, render: 104ms)
+[0]  GET /sign-in?callbackUrl=%2Frebound 200 in 211ms (compile: 25ms, proxy.ts: 22ms, render: 165ms)
+[0] ○ Compiling /relay/consultants ...
+[0] ⨯ ./src/app/relay/layout.tsx:170:3
+[0] Ecmascript file had an error
+[0] [0m [90m 168 |[39m
+[0]  [90m 169 |[39m [36masync[39m [36mfunction[39m signOut() {
+[0] [31m[1m>[22m[39m[90m 170 |[39m   [32m"use server"[39m[33m;[39m
+[0]  [90m     |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 171 |[39m   [36mconst[39m { signOut[33m:[39m authSignOut } [33m=[39m [36mawait[39m [36mimport[39m([32m"@/auth"[39m)[33m;[39m
+[0]  [90m 172 |[39m   [36mawait[39m authSignOut()[33m;[39m
+[0]  [90m 173 |[39m }[0m
+[0] 
+[0] It is not allowed to define inline "use server" annotated Server Actions in Client Components.
+[0] To use Server Actions in a Client Component, you can either export them from a separate file with "use server" at the top, or pass them down through props from a Server Component.
+[0] 
+[0] Read more: https://nextjs.org/docs/app/api-reference/directives/use-server#using-server-functions-in-a-client-component
+[0] 
+[0] 
+[0] Import traces:
+[0]   Client Component Browser:
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0]   Client Component SSR:
+[0]     ./src/app/relay/layout.tsx [Client Component SSR]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection-parameters.js:3:13
+[0] Module not found: Can't resolve 'dns'
+[0] [0m [90m 1 |[39m [32m'use strict'[39m
+[0]  [90m 2 |[39m
+[0] [31m[1m>[22m[39m[90m 3 |[39m [36mconst[39m dns [33m=[39m require([32m'dns'[39m)
+[0]  [90m   |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 4 |[39m
+[0]  [90m 5 |[39m [36mconst[39m defaults [33m=[39m require([32m'./defaults'[39m)
+[0]  [90m 6 |[39m[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection-parameters.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/client.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pg-connection-string@2.11.0/node_modules/pg-connection-string/index.js:82:70
+[0] Module not found: Can't resolve 'fs'
+[0] [0m [90m 80 |[39m
+[0]  [90m 81 |[39m   [90m// Only try to load fs if we expect to read from the disk[39m
+[0] [31m[1m>[22m[39m[90m 82 |[39m   [36mconst[39m fs [33m=[39m config[33m.[39msslcert [33m||[39m config[33m.[39msslkey [33m||[39m config[33m.[39msslrootcert [33m?[39m require([32m'fs'[39m) [33m:[39m [36mnull[39m
+[0]  [90m    |[39m                                                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 83 |[39m
+[0]  [90m 84 |[39m   [36mif[39m (config[33m.[39msslcert) {
+[0]  [90m 85 |[39m     config[33m.[39mssl[33m.[39mcert [33m=[39m fs[33m.[39mreadFileSync(config[33m.[39msslcert)[33m.[39mtoString()[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pg-connection-string@2.11.0/node_modules/pg-connection-string/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection-parameters.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/client.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pgpass@1.0.5/node_modules/pgpass/lib/index.js:4:10
+[0] Module not found: Can't resolve 'fs'
+[0] [0m [90m 2 |[39m
+[0]  [90m 3 |[39m [36mvar[39m path [33m=[39m require([32m'path'[39m)
+[0] [31m[1m>[22m[39m[90m 4 |[39m   [33m,[39m fs [33m=[39m require([32m'fs'[39m)
+[0]  [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 5 |[39m   [33m,[39m helper [33m=[39m require([32m'./helper.js'[39m)
+[0]  [90m 6 |[39m [33m;[39m
+[0]  [90m 7 |[39m[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pgpass@1.0.5/node_modules/pgpass/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/client.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection.js:93:19
+[0] Module not found: Can't resolve 'net'
+[0] [0m [90m 91 |[39m       }
+[0]  [90m 92 |[39m
+[0] [31m[1m>[22m[39m[90m 93 |[39m       [36mconst[39m net [33m=[39m require([32m'net'[39m)
+[0]  [90m    |[39m                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 94 |[39m       [36mif[39m (net[33m.[39misIP [33m&&[39m net[33m.[39misIP(host) [33m===[39m [35m0[39m) {
+[0]  [90m 95 |[39m         options[33m.[39mservername [33m=[39m host
+[0]  [90m 96 |[39m       }[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/stream.js:22:17
+[0] Module not found: Can't resolve 'net'
+[0] [0m [90m 20 |[39m [36mfunction[39m getNodejsStreamFuncs() {
+[0]  [90m 21 |[39m   [36mfunction[39m getStream(ssl) {
+[0] [31m[1m>[22m[39m[90m 22 |[39m     [36mconst[39m net [33m=[39m require([32m'net'[39m)
+[0]  [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 23 |[39m     [36mreturn[39m [36mnew[39m net[33m.[39m[33mSocket[39m()
+[0]  [90m 24 |[39m   }
+[0]  [90m 25 |[39m[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/stream.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0] 
+[0] ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/stream.js:27:17
+[0] Module not found: Can't resolve 'tls'
+[0] [0m [90m 25 |[39m
+[0]  [90m 26 |[39m   [36mfunction[39m getSecureStream(options) {
+[0] [31m[1m>[22m[39m[90m 27 |[39m     [36mconst[39m tls [33m=[39m require([32m'tls'[39m)
+[0]  [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[0]  [90m 28 |[39m     [36mreturn[39m tls[33m.[39mconnect(options)
+[0]  [90m 29 |[39m   }
+[0]  [90m 30 |[39m   [36mreturn[39m {[0m
+[0] 
+[0] 
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/stream.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/connection.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/lib/index.js [Client Component Browser]
+[0]     ./node_modules/.pnpm/pg@8.18.0/node_modules/pg/esm/index.mjs [Client Component Browser]
+[0]     ./src/db/index.ts [Client Component Browser]
+[0]     ./src/auth.ts [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Client Component Browser]
+[0]     ./src/app/relay/layout.tsx [Server Component]
+[0] 
+[0] https://nextjs.org/docs/messages/module-not-found
+[0] 
+[0] 
+[0]  GET /relay/consultants 500 in 3.6s (compile: 3.5s, render: 49ms)
+[0] ✓ Compiled in 533ms
+[0]  GET /relay/consultants 200 in 1827ms (compile: 1100ms, render: 727ms)
+[0]  GET /api/auth/session 200 in 60ms (compile: 37ms, render: 23ms)
+[0]  GET /api/auth/session 200 in 36ms (compile: 20ms, render: 17ms)
+[0]  GET /sign-in?callbackUrl=%2Frelay 200 in 175ms (compile: 9ms, proxy.ts: 42ms, render: 124ms)
+[0] ✓ Compiled in 844ms
+[0]  GET / 200 in 737ms (compile: 196ms, render: 541ms)
+[0]  GET /api/auth/session 200 in 68ms (compile: 43ms, render: 24ms)
+[0]  GET /api/auth/session 200 in 28ms (compile: 12ms, render: 16ms)
+[0]  GET /relay/consultants 200 in 1006ms (compile: 333ms, render: 674ms)
+[0]  GET /api/auth/session 200 in 55ms (compile: 35ms, render: 19ms)
+[0]  GET /api/auth/session 200 in 97ms (compile: 68ms, render: 29ms)
+[0]  GET /sign-in?callbackUrl=%2Frelay 200 in 143ms (compile: 11ms, proxy.ts: 17ms, render: 114ms)
+[0]  GET /admin/consultants 200 in 2.7s (compile: 2.5s, render: 254ms)
+[0]  GET /api/auth/session 200 in 42ms (compile: 28ms, render: 14ms)
+[0] ⨯ Error: Unauthorized
+[0]     at getConsultantsForModeration (src\lib\admin\actions.ts:67:29)
+[0]   65 | }) {
+[0]   66 |   const session = await auth();
+[0] > 67 |   if (!session?.user) throw new Error("Unauthorized");
+[0]      |                             ^
+[0]   68 |
+[0]   69 |   // Check if user is admin or super admin
+[0]   70 |   const superAdminEmails = process.env.SUPER_ADMIN_EMAILS?.split(",") || []; {
+[0]   digest: '1594359503'
+[0] }
+[0]  POST /admin/consultants 500 in 2.1s (compile: 11ms, render: 2.1s)
+[0]  GET /api/auth/session 200 in 22ms (compile: 10ms, render: 12ms)
+[0]  GET /admin/dashboard 200 in 1816ms (compile: 1589ms, render: 228ms)
+[0] ⨯ Error: Unauthorized
+[0]     at getAdminStats (src\lib\admin\actions.ts:121:29)
+[0]   119 | export async function getAdminStats() {
+[0]   120 |   const session = await auth();
+[0] > 121 |   if (!session?.user) throw new Error("Unauthorized");
+[0]       |                             ^
+[0]   122 |
+[0]   123 |   const superAdminEmails = process.env.SUPER_ADMIN_EMAILS?.split(",") || [];
+[0]   124 |   const isSuperAdmin = superAdminEmails.includes(session.user.email); {
+[0]   digest: '605532278'
+[0] }
+[0]  POST /admin/dashboard 500 in 589ms (compile: 18ms, render: 571ms)
+[0]  GET /api/auth/session 200 in 31ms (compile: 20ms, render: 12ms)
+[0] ⨯ Error: Unauthorized
+[0]     at getRecentAuditLogs (src\lib\admin\actions.ts:180:29)
+[0]   178 | export async function getRecentAuditLogs(limit = 50) {
+[0]   179 |   const session = await auth();
+[0] > 180 |   if (!session?.user) throw new Error("Unauthorized");
+[0]       |                             ^
+[0]   181 |
+[0]   182 |   const superAdminEmails = process.env.SUPER_ADMIN_EMAILS?.split(",") || [];
+[0]   183 |   const isSuperAdmin = superAdminEmails.includes(session.user.email); {
+[0]   digest: '3930044302'
+[0] }
+[0]  POST /admin/dashboard 500 in 752ms (compile: 8ms, render: 745ms)
+[0]  GET /api/auth/session 200 in 15ms (compile: 6ms, render: 9ms)
+[0]  GET /about 200 in 1638ms (compile: 1246ms, render: 392ms)
+[0]  GET /api/auth/session 200 in 37ms (compile: 25ms, render: 12ms)
+[0]  GET /api/auth/session 200 in 12ms (compile: 6ms, render: 7ms)
+[0]  GET /sign-up 200 in 2.2s (compile: 1667ms, proxy.ts: 13ms, render: 480ms)
+[0]  GET /api/auth/session 200 in 128ms (compile: 93ms, render: 36ms)
+[0]  GET /contact 200 in 605ms (compile: 94ms, render: 511ms)
+[0]  GET /api/auth/session 200 in 112ms (compile: 13ms, render: 98ms)
+[0]  GET /api/auth/session 200 in 121ms (compile: 47ms, render: 75ms)
+[0] ✓ Compiled in 655ms
+[0]  GET /contact 200 in 526ms (compile: 43ms, render: 482ms)
+[0]  GET /contact 200 in 320ms (compile: 9ms, render: 312ms)
+[0]  GET /contact 200 in 176ms (compile: 12ms, render: 164ms)
+[0]  GET /contact 200 in 79ms (compile: 9ms, render: 71ms)
+[0] ✓ Compiled in 537ms
+[0]  GET /contact 200 in 230ms (compile: 9ms, render: 222ms)
+[0]  GET /contact 200 in 221ms (compile: 10ms, render: 211ms)
+[0]  GET /contact 200 in 151ms (compile: 9ms, render: 142ms)
+[0]  GET /contact 200 in 79ms (compile: 10ms, render: 70ms)
+[0] ✓ Compiled in 534ms
+[0]  GET /contact 200 in 277ms (compile: 7ms, render: 270ms)
+[0]  GET /contact 200 in 202ms (compile: 8ms, render: 194ms)
+[0]  GET /contact 200 in 140ms (compile: 7ms, render: 133ms)
+[0]  GET /contact 200 in 79ms (compile: 8ms, render: 71ms)
+[0] ✓ Compiled in 787ms
+[0] ✓ Compiled in 946ms
+[0] ✓ Compiled in 1917ms
+[0]  GET /contact 200 in 155ms (compile: 28ms, render: 127ms)
+[0] ✓ Compiled in 500ms
+[0]  GET /contact 200 in 84ms (compile: 8ms, render: 76ms)
+[0] ✓ Compiled in 355ms
+[0]  GET /contact 200 in 59ms (compile: 5ms, render: 54ms)
+[0] ✓ Compiled in 364ms
+[0]  GET /contact 200 in 60ms (compile: 5ms, render: 55ms)
+[0] ✓ Compiled in 450ms
+[0]  GET /contact 200 in 69ms (compile: 7ms, render: 62ms)
+[0] ✓ Compiled in 693ms
+[0] ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.6_@babel+core@7.2_e9b455b547bd47b9683b12b158db62eb/node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[0]  GET /contact 200 in 2.9s (compile: 789ms, render: 2.1s)
+[0]  GET /contact 200 in 375ms (compile: 70ms, render: 305ms)
+[0]  GET /contact 200 in 2.6s (compile: 599ms, render: 2.0s)
+[0]  GET /api/auth/session 200 in 1517ms (compile: 1465ms, render: 52ms)
+[0]  GET /api/auth/session 200 in 17ms (compile: 5ms, render: 12ms)
+[0] ✓ Compiled in 820ms
+[0] ✓ Compiled in 449ms
+[0]  GET /contact 200 in 300ms (compile: 9ms, render: 291ms)
+[0]  GET /contact 200 in 214ms (compile: 7ms, render: 207ms)
+[0]  GET /contact 200 in 153ms (compile: 8ms, render: 146ms)
+[0]  GET /contact 200 in 83ms (compile: 8ms, render: 75ms)
+[0] ✓ Compiled in 441ms
+[0]  GET /contact 200 in 71ms (compile: 6ms, render: 65ms)
+[0] ✓ Compiled in 338ms
+[0]  GET /contact 200 in 81ms (compile: 7ms, render: 75ms)
+[0] ✓ Compiled in 459ms
+[0]  GET /contact 200 in 116ms (compile: 6ms, render: 110ms)
+[0]  GET /contact 200 in 60ms (compile: 6ms, render: 54ms)
+[0] ✓ Compiled in 437ms
+[0]  GET /contact 200 in 86ms (compile: 7ms, render: 80ms)
+[0]  GET /contact 200 in 359ms (compile: 50ms, render: 310ms)
+[0]  GET /contact 200 in 137ms (compile: 8ms, render: 129ms)
+[0]  GET /contact 200 in 66ms (compile: 6ms, render: 60ms)
+[0] ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.6_@babel+core@7.2_e9b455b547bd47b9683b12b158db62eb/node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[0]  GET /contact 200 in 1976ms (compile: 266ms, render: 1711ms)
+[0]  GET /contact 200 in 1546ms (compile: 1073ms, render: 473ms)
+[0]  GET /contact 200 in 1675ms (compile: 9ms, render: 1666ms)
+[0]  GET /api/auth/session 200 in 973ms (compile: 935ms, render: 38ms)
+[0]  GET /api/auth/session 200 in 14ms (compile: 5ms, render: 10ms)
+[0] ✓ Compiled in 601ms
+[0]  GET /contact 200 in 342ms (compile: 16ms, render: 326ms)
+[0]  GET /contact 200 in 222ms (compile: 8ms, render: 215ms)
+[0]  GET /contact 200 in 157ms (compile: 8ms, render: 149ms)
+[0]  GET /contact 200 in 81ms (compile: 9ms, render: 72ms)
+[0] ✓ Compiled in 1219ms
+[0]  GET /contact 200 in 176ms (compile: 9ms, render: 167ms)
+[0]  GET /contact 200 in 308ms (compile: 10ms, render: 298ms)
+[0]  GET /contact 200 in 197ms (compile: 12ms, render: 186ms)
+[0]  GET /contact 200 in 95ms (compile: 8ms, render: 87ms)
+[0] [Error: ParseError: D:\: Unexpected token, expected ","  
+[0]  D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11]
+[0] [Error: ParseError: D:\: Unexpected token, expected ","  
+[0]  D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11]
+[0] ✓ Compiled in 2.3s
+[0] ✓ Compiled in 633ms
+[0]   Reload env: .env
+[0] ⨯ ./src/app/globals.css
+[0] Error evaluating Node.js code
+[0] CssSyntaxError: tailwindcss: D:\Projects\Coding\TAG\b2b-boilerplate\src\app\globals.css:1:1: ParseError: D:\: Unexpected token, expected ","  
+[0]  D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11
+[0]     [at D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11]
+[0]     [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+[0]     [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+[0]     [at Object.Once (D:\Projects\Coding\TAG\b2b-boilerplate\node_modules\.pnpm\@tailwindcss+postcss@4.1.18\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+[0]     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+[0]     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+[0]     [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./src/app/globals.css [Client Component Browser]
+[0]     ./src/app/layout.tsx [Server Component]
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ✓ Compiled in 1667ms
+[0] ✓ Compiled in 150ms
+[0]  GET /contact 500 in 794ms (compile: 509ms, render: 285ms)
+[0] ⨯ ./src/app/globals.css
+[0] Error evaluating Node.js code
+[0] CssSyntaxError: tailwindcss: D:\Projects\Coding\TAG\b2b-boilerplate\src\app\globals.css:1:1: ParseError: D:\: Unexpected token, expected ","  
+[0]  D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11
+[0]     [at D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11]
+[0]     [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+[0]     [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+[0]     [at Object.Once (D:\Projects\Coding\TAG\b2b-boilerplate\node_modules\.pnpm\@tailwindcss+postcss@4.1.18\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+[0]     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+[0]     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+[0]     [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./src/app/globals.css [Client Component Browser]
+[0]     ./src/app/layout.tsx [Server Component]
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0]  GET /contact 500 in 63ms (compile: 36ms, render: 27ms)
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ✓ Finished filesystem cache database compaction in 13.4s
+[0] ⨯ ./src/app/globals.css
+[0] Error evaluating Node.js code
+[0] CssSyntaxError: tailwindcss: D:\Projects\Coding\TAG\b2b-boilerplate\src\app\globals.css:1:1: ParseError: D:\: Unexpected token, expected ","  
+[0]  D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11
+[0]     [at D:/Projects/Coding/TAG/b2b-boilerplate/tailwind.config.ts:5:11]
+[0]     [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+[0]     [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+[0]     [at Object.Once (D:\Projects\Coding\TAG\b2b-boilerplate\node_modules\.pnpm\@tailwindcss+postcss@4.1.18\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+[0]     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+[0]     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+[0]     [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+[0] 
+[0] Import trace:
+[0]   Client Component Browser:
+[0]     ./src/app/globals.css [Client Component Browser]
+[0]     ./src/app/layout.tsx [Server Component]
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0]  GET / 500 in 874ms (compile: 825ms, render: 49ms)
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] Persisting failed: Unable to write SST file 00001895.sst
+[0] 
+[0] Caused by:
+[0]     The system cannot find the path specified. (os error 3)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ServerActionsGraph::get_server_actions_for_endpoint (TaskId 337459))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 337459 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ClientReferencesGraph::new_with_entries (TaskId 660254))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 660254 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ClientReferencesGraph::new_with_entries (TaskId 640797))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 640797 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ClientReferencesGraph::new_with_entries (TaskId 640797))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 640797 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ModuleGraph::from_graphs (TaskId 460840))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 460840 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 660227 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ClientReferencesGraph::new_with_entries (TaskId 660254))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 660254 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ClientReferencesGraph::new_with_entries (TaskId 640797))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 640797 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 640778 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ClientReferencesGraph::new_with_entries (TaskId 640797))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 640797 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ClientReferencesGraph::new_with_entries (TaskId 640797))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 640797 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as EcmascriptChunkPlaceable>::get_async_module (TaskId 748887))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 748887 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as EcmascriptChunkPlaceable>::get_async_module (TaskId 748887))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 748887 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ServerActionsGraph::get_server_actions_for_endpoint (TaskId 337459))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 337459 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ServerActionsGraph::get_server_actions_for_endpoint (TaskId 337459))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 337459 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 662001))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 662001 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 777577))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 777577 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 777077))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 777077 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 662507 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001163.meta
+[0]     1: Unable to open static sorted file 00001158.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 777144))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 777144 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 777156 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 661920 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleChunkItem as ChunkItem>::ty (TaskId 777231))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 777231 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 777577))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 777577 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001853.meta
+[0]     2: Unable to open static sorted file 00001850.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for chunk_items_with_info_with_type (TaskId 770481))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 770481 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 770425 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001281.meta
+[0]     1: Unable to open static sorted file 00001276.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 376735))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 376735 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 346523))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 346523 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchGroup::split_by_chunk_type (TaskId 345168))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 345168 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 345166))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 345166 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 346862))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 346862 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 357140))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 357140 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 385121))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 385121 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 483469))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 483469 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 464568))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 464568 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EcmascriptClientReferenceModule as ChunkableModule>::as_chunk_item (TaskId 483308))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 483308 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 662009 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001682.meta
+[0]     1: Unable to open static sorted file 00001677.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 777100 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 357197 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 464535 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001682.meta
+[0]     1: Unable to open static sorted file 00001677.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 357140))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 357140 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 385121))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 385121 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 385121))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 385121 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 345166))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 345166 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 376735))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 376735 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 345166))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 345166 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 383490 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001482.meta
+[0]     1: Unable to open static sorted file 00001477.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 346134 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00000992.meta
+[0]     1: Unable to open static sorted file 00000987.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 345526 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 561845 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 464414 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 385315 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 483628 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001281.meta
+[0]     1: Unable to open static sorted file 00001276.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 374006 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00000186.meta
+[0]     1: Unable to open static sorted file 00000181.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 346735 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001054.meta
+[0]     1: Unable to open static sorted file 00001049.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] -----
+[0] [1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Rupesh\AppData\Local\Temp\next-panic-291cbbfadafe5d02688453ce9d25407a.log.
+[0] 
+[0] To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20%5Bproject%5D%2Fsrc%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29&body=Turbopack%20version%3A%20%6023c46498%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20%5Bproject%5D%2Fsrc%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+[0] -----
+[0] 
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 385121))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 385121 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ChunkItemBatchWithAsyncModuleInfo::split_by_chunk_type (TaskId 376735))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 376735 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptClientReferenceModule as ChunkableModule>::as_chunk_item (TaskId 483308))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 483308 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 389885 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for determine_module_type_for_directory (TaskId 112002))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 112002 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for determine_module_type_for_directory (TaskId 112002))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 112002 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptChunkItemContent::new (TaskId 186220))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 186220 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptChunkItemContent::new (TaskId 186220))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 186220 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptChunkItemContent::new (TaskId 186220))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 186220 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 175468))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175468 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001887.meta
+[0]     2: Unable to open static sorted file 00001883.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EsmAssetReference as ModuleReference>::resolve_reference (TaskId 149583))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149583 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175342))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175342 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175347))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175347 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175340))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175340 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for EcmascriptChunkItemContent::new (TaskId 390329))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 390329 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info (TaskId 390220))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 390220 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 177452))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 177452 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175550))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175550 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001887.meta
+[0]     2: Unable to open static sorted file 00001883.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 177401))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 177401 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 176188))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176188 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 111490))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 111490 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 176543))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176543 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleLocalsModule as Module>::is_self_async (TaskId 176056))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176056 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleLocalsModule as Module>::is_self_async (TaskId 175657))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175657 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 176511))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176511 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175342))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175342 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175676))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175676 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for primary_chunkable_referenced_modules (TaskId 120822))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 120822 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 175314 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for EcmascriptChunkItemContent::new (TaskId 186220))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 186220 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptModuleAsset as Module>::is_self_async (TaskId 175418))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175418 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 119687))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 119687 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 167826))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 167826 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for AsyncModule::is_self_async (TaskId 177013))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 177013 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 174060))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 174060 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptInputTransforms::extend (TaskId 108849))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 108849 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for AsyncModule::is_self_async (TaskId 176872))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176872 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 174072))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 174072 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001887.meta
+[0]     2: Unable to open static sorted file 00001883.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EsmAssetReference as ModuleReference>::resolve_reference (TaskId 149583))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149583 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for AsyncModule::is_self_async (TaskId 176872))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 176872 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 111381))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 111381 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149237))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149237 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 175261))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 175261 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 111490))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 111490 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 111381))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 111381 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 160434))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 160434 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149237))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149237 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 124324))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124324 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149246))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149246 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149237))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149237 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180141))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180141 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001887.meta
+[0]     2: Unable to open static sorted file 00001883.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 148589))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 148589 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149237))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149237 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180811))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180811 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 124324))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124324 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180040))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180040 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001887.meta
+[0]     2: Unable to open static sorted file 00001883.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 150499))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 150499 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180290))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180290 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 167150))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 167150 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for primary_chunkable_referenced_modules (TaskId 164305))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 164305 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 124324))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124324 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 124324))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124324 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180752))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180752 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 111381))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 111381 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149237))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149237 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 60259))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 60259 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::resolve_asset (TaskId 124324))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124324 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ModuleReference>::resolve_reference (TaskId 124088))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124088 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180127))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180127 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EsmAssetReference as ChunkableModuleReference>::chunking_type (TaskId 149246))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 149246 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:1354:30:
+[0] Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "<NodeJsChunkingContext as ChunkingContext>::is_module_merging_enabled", global_name: "turbopack-nodejs@turbopack_nodejs::chunking_context::NodeJsChunkingContext::ChunkingContext::is_module_merging_enabled", .. }, this: Some(RawVc::TaskCell(1923, "turbopack_nodejs::chunking_context::NodeJsChunkingContext#0")), arg: () } from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001875.meta
+[0]     1: Unable to open static sorted file 00001870.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180435))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180435 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:1354:30:
+[0] Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "EsmAssetReference::get_referenced_asset", global_name: "turbopack-ecmascript@turbopack_ecmascript::references::esm::base::EsmAssetReference::get_referenced_asset", .. }, this: Some(RawVc::TaskCell(111960, "turbopack_ecmascript::references::esm::base::EsmAssetReference#4")), arg: () } from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001875.meta
+[0]     1: Unable to open static sorted file 00001870.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <EsmAssetReference as ModuleReference>::resolve_reference (TaskId 124088))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 124088 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EcmascriptChunkType as ChunkType>::chunk_item_size (TaskId 180811))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 180811 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001853.meta
+[0]     2: Unable to open static sorted file 00001850.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 464984))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 464984 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 561773))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 561773 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (17728) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 561773))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 561773 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001854.meta
+[0]     2: Unable to open static sorted file 00001849.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info (TaskId 374228))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 374228 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for item_code_and_ids (TaskId 400317))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 400317 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for item_code_and_ids (TaskId 400317))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 400317 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for item_code_and_ids (TaskId 400317))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 400317 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001874.meta
+[0]     2: Unable to open static sorted file 00001867.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for ModuleGraph::from_graphs (TaskId 460840))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 460840 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 309768 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 488819 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00000186.meta
+[0]     1: Unable to open static sorted file 00000181.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (21288) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for EcmascriptBuildNodeChunkContent::new (TaskId 488625))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 488625 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001881.meta
+[0]     2: Unable to open static sorted file 00001877.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 465057 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001482.meta
+[0]     1: Unable to open static sorted file 00001477.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 374155 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (48068) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 358168 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001799.meta
+[0]     1: Unable to open static sorted file 00001795.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (39756) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for batch_size (TaskId 359466))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 359466 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (47816) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for <EcmascriptDevChunkList as Asset>::content (TaskId 404966))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 404966 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (45156) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Data for AssetContent::write (TaskId 407999))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 407999 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001882.meta
+[0]     2: Unable to open static sorted file 00001878.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (46228) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:963:22:
+[0] Failed to lookup task type: Looking up task type for TaskId 337464 from database failed
+[0] 
+[0] Caused by:
+[0]     0: Unable to open static sorted file referenced from 00001682.meta
+[0]     1: Unable to open static sorted file 00001677.sst
+[0]     2: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for PlainIssue::from_issue (TaskId 931595))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 931595 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] 
+[0] thread 'tokio-runtime-worker' (42948) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+[0] Failed to restore task data (corrupted database or bug): Meta for PlainIssue::from_issue (TaskId 931595))
+[0] 
+[0] Caused by:
+[0]     0: Looking up data for TaskId 931595 from database failed
+[0]     1: Unable to open static sorted file referenced from 00001873.meta
+[0]     2: Unable to open static sorted file 00001868.sst
+[0]     3: The system cannot find the path specified. (os error 3)
+[0] ⨯ Error: ENOENT: no such file or directory, open 'D:\Projects\Coding\TAG\b2b-boilerplate\.next\dev\server\app\(website-layout)\contact\page\build-manifest.json'
+[0]     at ignore-listed frames {
+[0]   errno: -4058,
+[0]   code: 'ENOENT',
+[0]   syscall: 'open',
+[0]   path: 'D:\\Projects\\Coding\\TAG\\b2b-boilerplate\\.next\\dev\\server\\app\\(website-layout)\\contact\\page\\build-manifest.json'
+[0] }
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] Error: ENOENT: no such file or directory, open 'D:\Projects\Coding\TAG\b2b-boilerplate\.next\dev\server\app\(website-layout)\contact\page\build-manifest.json'
+[0]     at ignore-listed frames {
+[0]   errno: -4058,
+[0]   code: 'ENOENT',
+[0]   syscall: 'open',
+[0]   path: 'D:\\Projects\\Coding\\TAG\\b2b-boilerplate\\.next\\dev\\server\\app\\(website-layout)\\contact\\page\\build-manifest.json'
+[0] }
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] ⚠ ./tailwind.config.ts:5:12
+[0] Parsing ecmascript source code failed
+[0] [0m [90m 3 |[39m [36mexport[39m [36mdefault[39m {
+[0]  [90m 4 |[39m   theme[33m:[39m {
+[0] [31m[1m>[22m[39m[90m 5 |[39m     extend {
+[0]  [90m   |[39m            [31m[1m^[22m[39m
+[0]  [90m 6 |[39m       fontFamily[33m:[39m {
+[0]  [90m 7 |[39m         base[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m
+[0]  [90m 8 |[39m         heading[33m:[39m [[32m"var(--font-public-sans)"[39m[33m,[39m [32m"sans-serif"[39m][33m,[39m[0m
+[0] 
+[0] Expected a semicolon
+[0] 
+[0] 
+[0] Error: ENOENT: no such file or directory, open 'D:\Projects\Coding\TAG\b2b-boilerplate\.next\dev\server\pages\_app\build-manifest.json'
+[0]     at ignore-listed frames {
+[0]   errno: -4058,
+[0]   code: 'ENOENT',
+[0]   syscall: 'open',
+[0]   path: 'D:\\Projects\\Coding\\TAG\\b2b-boilerplate\\.next\\dev\\server\\pages\\_app\\build-manifest.json'
+[0] }
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[0] Sentry DSN is not set. Skipping Sentry configuration.
+[0] [?25h
+[0] next dev --turbopack exited with code 4294967295

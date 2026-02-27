@@ -1,0 +1,20 @@
+{
+  "name": "ralph-loop",
+  "version": "1.0.0",
+  "description": "Task-driven development loop with Playwright verification for b2b-boilerplate",
+  "scripts": {
+    "start": "node run.js",
+    "status": "node run.js --status",
+    "reset": "node run.js --reset",
+    "dev": "node run.js --dev",
+    "skip": "node run.js --skip",
+    "complete": "node run.js --complete"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

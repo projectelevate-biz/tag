@@ -1,0 +1,11 @@
+# Ralph Loop State Files
+state.json
+current-prompt.md
+.claude-prompt.md
+
+# Screenshots
+screenshots/*.png
+screenshots/*.jpg
+
+# Logs
+*.log

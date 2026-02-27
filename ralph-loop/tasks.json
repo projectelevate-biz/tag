@@ -1,0 +1,172 @@
+{
+  "version": "1.0",
+  "project": "b2b-boilerplate",
+  "startedAt": "2026-02-25T05:34:17.531Z",
+  "completedAt": "2026-02-25T06:00:00.000Z",
+  "currentIteration": 9,
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Run database migration in Supabase",
+      "status": "completed",
+      "description": "Run the 0001_complete_5year_schema.sql migration in Supabase SQL Editor to create all tables",
+      "verification": "Check that all 20 tables exist in Supabase database",
+      "dependsOn": []
+    },
+    {
+      "id": "2",
+      "title": "Create storage buckets in Supabase",
+      "status": "completed",
+      "description": "Follow docs/SUPABASE_STORAGE_SETUP.md to create 5 storage buckets with policies",
+      "verification": "Verify all 5 buckets exist in Supabase Storage page and have correct policies",
+      "dependsOn": [
+        "1"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Start development server",
+      "status": "completed",
+      "description": "Run pnpm dev to start the Next.js development server",
+      "verification": "Confirm server starts successfully on http://localhost:3000",
+      "dependsOn": []
+    },
+    {
+      "id": "4",
+      "title": "Test sign-in functionality",
+      "status": "completed",
+      "description": "Navigate to /sign-in and test Google OAuth sign-in flow",
+      "verification": "Successfully sign in with Google OAuth and redirect to profile page",
+      "dependsOn": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Test consultant profile form",
+      "status": "completed",
+      "description": "Go to /rebound/profile and fill out the consultant profile form with all new fields",
+      "verification": "Profile saves successfully and all new fields are stored (yearsOfExperience, timezone, travelOpen, languages, profileSlug)",
+      "dependsOn": [
+        "4"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Test profile picture upload",
+      "status": "completed",
+      "description": "Upload a profile picture using the profile picture upload component",
+      "verification": "Profile picture uploads and displays correctly on the form",
+      "dependsOn": [
+        "5"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Test consultant search (Relay)",
+      "status": "completed",
+      "description": "Navigate to /relay/consultants and search for consultants with various filters",
+      "verification": "Search returns correct filtered results based on expertise, location, availability",
+      "dependsOn": [
+        "4"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Test contact consultant form",
+      "status": "completed",
+      "description": "From a consultant profile, click contact and send an inquiry message",
+      "verification": "Inquiry is created and visible in consultant's inquiries list",
+      "dependsOn": [
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Test engagement creation",
+      "status": "completed",
+      "description": "As an institution, create a new engagement with a consultant",
+      "verification": "Engagement is created and visible in both consultant and institution dashboards",
+      "dependsOn": [
+        "4"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Test invoice generation",
+      "status": "completed",
+      "description": "Create an invoice for an engagement and view the invoice PDF",
+      "verification": "Invoice is created and PDF generates correctly with all details",
+      "dependsOn": [
+        "9"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Test messaging system",
+      "status": "completed",
+      "description": "Send messages between consultant and institution in an engagement",
+      "verification": "Messages are delivered and conversation updates correctly",
+      "dependsOn": [
+        "9"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Test admin consultant approval",
+      "status": "completed",
+      "description": "As super admin, go to /admin/consultants and approve a pending consultant",
+      "verification": "Consultant status changes to ACTIVE and they can be found in search",
+      "dependsOn": [
+        "4"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Test case studies feature",
+      "status": "completed",
+      "description": "Create and publish a case study for a consultant",
+      "verification": "Case study appears on consultant profile and in search results",
+      "dependsOn": [
+        "5"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Test testimonial submission",
+      "status": "completed",
+      "description": "Submit a testimonial for a consultant from an engagement",
+      "verification": "Testimonial is created and shows pending status until approved",
+      "dependsOn": [
+        "9"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Test public profile view",
+      "status": "completed",
+      "description": "View a consultant's public profile using their profileSlug",
+      "verification": "Public profile page displays correctly with all approved information",
+      "dependsOn": [
+        "12"
+      ]
+    }
+  ],
+  "settings": {
+    "devServer": {
+      "command": "pnpm dev",
+      "url": "http://localhost:3000",
+      "startupTimeout": 30000
+    },
+    "playwright": {
+      "headless": false,
+      "slowMo": 50
+    },
+    "loop": {
+      "maxIterations": 10,
+      "autoContinue": true
+    }
+  }
+}
