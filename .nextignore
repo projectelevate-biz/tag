@@ -1,0 +1,6 @@
+src
+src.old
+scripts.old
+drizzle
+*.old.*
+**/*.old.*
