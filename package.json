@@ -10,9 +10,9 @@
     "clean": "rm -rf node_modules package-lock.json .next"
   },
   "dependencies": {
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "@supabase/supabase-js": "^2.47.10",
     "@supabase/ssr": "^0.8.0",
     "zod": "^3.23.8",

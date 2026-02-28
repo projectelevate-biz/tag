@@ -4,9 +4,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
-  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   images: {
     remotePatterns: [
       {
@@ -15,20 +14,8 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
-    config.watchOptions = {
-      ...config.watchOptions,
-      ignored: [
-        '**/node_modules',
-        '**/.next',
-        '**/src',
-        '**/src.old',
-        '**/scripts.old',
-        '**/drizzle',
-        '**/*.old.*',
-      ],
-    }
-    return config
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
   },
 }
 
